@@ -19,8 +19,8 @@ var verification = setInterval(function(){
         alert("Vous avez perdu")
     }
     else {
-        document.addEventListener('keydown', (event) => {
-            if (event.key === '') {
+        document.addEventListener('keypress', (event) => {
+            if (event.key === ' ') {
                 sauter();
             }
         });
